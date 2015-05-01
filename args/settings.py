@@ -98,7 +98,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Parse database configuration from $DATABASE_URL
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config(default='postgres://jasbfgtgrpdghi:41_b7h9Zl6oxEPtL-GS7I3nRlz@ec2-54-163-238-96.compute-1.amazonaws.com:5432/d37e45ss45iofg')
 
 # Enable Connection Pooling (if desired)
 DATABASES['default']['ENGINE'] = 'django_postgrespool'
